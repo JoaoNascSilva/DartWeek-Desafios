@@ -1,16 +1,11 @@
-# delivery_app
+# DW 2.0 - Desafio 4
 
-A new Flutter project.
+<br/>
 
-## Getting Started
+#### Desafio Proposto
 
-This project is a starting point for a Flutter application.
+1. No projeto flutter já criado abra a tela de Home
+2. Montar uma classe para buscar todos os dados do serviço que você construiu no primeiro desafio
+3. Busque esses dados como aprendemos na aula e apresente na tela de HomePage
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Obs: Lembre de utilizar a Controller e o GetConnect do próprio GetX
