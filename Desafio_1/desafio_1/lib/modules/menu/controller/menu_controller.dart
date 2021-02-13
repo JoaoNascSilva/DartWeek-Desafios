@@ -16,7 +16,8 @@ class MenuController {
 
   @Route.get('/')
   Future<Response> getPizzas(Request request) async {
-    return Response.ok(jsonEncode(menu?.map((m) => m.toMap())?.toList() ?? []));
+    final response = jsonEncode(menu?.map((m) => m.toMap())?.toList() ?? []);
+    return Response.ok(response);
   }
 
   Router get router => _$MenuControllerRouter(this);
