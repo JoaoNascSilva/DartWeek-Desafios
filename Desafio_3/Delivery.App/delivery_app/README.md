@@ -1,9 +1,8 @@
 # DW 2.0 - Desafio 3
 
-Na aula de hoje iniciamos no flutter certo?  
 <br/>
 
-**_Portanto como desafio eu gostaria que:_**
+#### Desafio proposto
 
 1. Crie um projeto Flutter
 2. Configure o GET
