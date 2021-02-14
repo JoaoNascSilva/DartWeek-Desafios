@@ -5,15 +5,15 @@ class HomeHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 350,
+      height: 180,
       child: Stack(
         children: [
           Container(
-            height: 300,
+            height: 200,
             width: Get.mediaQuery.size.width,
             decoration: BoxDecoration(
               image: DecorationImage(
-                fit: BoxFit.none,
+                fit: BoxFit.cover,
                 image: AssetImage('assets/images/topoCardapio.png'),
               ),
             ),
@@ -22,7 +22,7 @@ class HomeHeader extends StatelessWidget {
             bottom: 0,
             width: Get.mediaQuery.size.width,
             child: SizedBox(
-              height: 200,
+              height: 120,
               child: Image.asset('assets/images/logo.png'),
             ),
           ),

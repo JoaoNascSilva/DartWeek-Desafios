@@ -47,7 +47,10 @@ class MenuBuyButton extends GetView<MenuController> {
                     ),
                   ),
                 ),
-                onPressed: () => controller.goToShoppingCart(),
+                onPressed: () {
+                  if (controller.flavorsSelected.length > 0)
+                    controller.goToShoppingCard();
+                },
               ),
             ),
           ),

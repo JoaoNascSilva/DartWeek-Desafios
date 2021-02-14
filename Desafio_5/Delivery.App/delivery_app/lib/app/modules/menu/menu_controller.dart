@@ -1,8 +1,8 @@
 import 'package:delivery_app/app/models/menu_item.dart';
 import 'package:delivery_app/app/models/menu_model.dart';
 import 'package:delivery_app/app/modules/shoppingCard/shopping_card_controller.dart';
-import 'package:delivery_app/app/repositpories/menu_repository.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:delivery_app/app/modules/shoppingCard/shopping_card_page.dart';
+import 'package:delivery_app/app/repositories/menu_repository.dart';
 import 'package:get/get.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
@@ -34,16 +34,13 @@ class MenuController extends GetxController {
     }
   }
 
-  void goToShoppingCart() async {
-    Get.put(ShoppingCardController());
+  Future<void> goToShoppingCard() async {
+    Get.put(ShoppingCardController(_flavorsSelected));
     await showBarModalBottomSheet(
       context: Get.context,
       isDismissible: false,
       builder: (_) {
-        return Container(
-          height: 300,
-          child: Text('Sacola'),
-        );
+        return ShoppingCardPage();
       },
     );
     Get.delete<ShoppingCardController>();
